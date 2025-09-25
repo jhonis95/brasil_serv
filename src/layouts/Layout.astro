@@ -2,6 +2,8 @@
 import Footer from "../components/Footer.astro";
 import Navbar from "../components/Navbar.astro";
 import "../styles/global.css";
+
+import whatsappIcon from "../assets/logos/whatsapp.svg"
 ---
 
 <!doctype html>
@@ -16,6 +18,9 @@ import "../styles/global.css";
 	<body class=" font-roboto">
 		<Navbar/>
 		<slot />
+		<a class="fixed bottom-10 right-10" href={`https://wa.me/55${import.meta.env.WHATSAPP_NUMBER}`} target="_blank" rel="noopener noreferrer">
+			<img class=" size-20" src={whatsappIcon.src} alt="whatsapp icon">
+		</a>
 		<Footer/>
 	</body>
 </html>
