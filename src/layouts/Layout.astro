@@ -4,6 +4,8 @@ import Navbar from "../components/Navbar.astro";
 import "../styles/global.css";
 
 import whatsappIcon from "../assets/logos/whatsapp.svg"
+import Seo from "./Seo.astro";
+const { seoPageTitle, seoPageDescription}= Astro.props
 ---
 
 <!doctype html>
@@ -13,7 +15,7 @@ import whatsappIcon from "../assets/logos/whatsapp.svg"
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>BrasilServ Refrigeração</title>
+		<Seo title={seoPageTitle} description={seoPageDescription}/>
 	</head>
 	<body class=" font-roboto">
 		<Navbar/>
