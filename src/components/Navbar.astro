@@ -3,6 +3,7 @@ import logo from '../assets/logo_brasil_serv.svg'
 import NavDropDownMobile from './NavDropDownMobile.astro'
 ---
 <header 
+    id="inicio"
     class=" flex flex-col w-full justify-center items-center bg-secundary py-4"
     x-data
     x-init="$store.display.setDisplay()"
@@ -15,19 +16,19 @@ import NavDropDownMobile from './NavDropDownMobile.astro'
                 <nav class="text-base font-roboto text-backwhite sm:text-lg">
                     <ul class="flex gap-8 ">
                         <li>
-                            <a href="">Início</a>
+                            <a href="#inicio">Início</a>
                         </li>
                         <li>
-                            <a href="">Benefícios</a>
+                            <a href="#beneficios">Benefícios</a>
                         </li>
                         <li>
-                            <a href="">Serviços</a>
+                            <a href="#serviços">Serviços</a>
                         </li>
                         <li>
-                            <a href="">Sobre nóso</a>
+                            <a href="#sobre">Sobre nós</a>
                         </li>
                         <li>
-                            <a href="">Contato</a>
+                            <a href="#contato">Contato</a>
                         </li>
                     </ul>
                 </nav>
